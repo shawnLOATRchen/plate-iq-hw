@@ -5,7 +5,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'app.js',
-    publicPath: '/dist/' //only use /dist/ instead of ../dist/...
+    // publicPath: 'dist/' //only use /dist/ instead of ../dist/...
   },
   module: {
     loaders: [
@@ -21,5 +21,12 @@ module.exports = {
         loader: 'style-loader!css-loader!sass-loader'
       }
     ]
-  }
+  },
+  devServer: {
+    historyApiFallback: true,
+    contentBase: './dist/',
+    headers: {
+      'Access-Control-Allow-Origin': '*'
+    }
+  },
 };
