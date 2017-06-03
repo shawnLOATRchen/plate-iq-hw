@@ -6,30 +6,60 @@ export default class PanelHead extends Component{
     super();
     this.state = { fold: true }
   }
-  toggleFold(){
-    this.setState({ fold: !this.state.fold});
+  handleProgress(){
+    switch (this.props.progress) {
+      case "explorted":
+        return this.props.changeProgress("direct")
+      case "paid":
+        return this.props.changeProgress("explorted")
+      case "direct":
+      default:
+        return this.props.changeProgress("paid")
+    }
+  }
+  buttonText(){
+    switch (this.props.progress) {
+      case "explorted":
+        return "Explorted again"
+      case "paid":
+        return "Explort"
+      case "direct":
+      default:
+        return "Approve"
+    }
   }
   render(){
     return(
       <div className="panel-head">
-        <div className="head-action d-flex justify-content-between">
-          <div className="action-direct">DIRECT</div>
+        <div className="head-action d-flex justify-content-between align-items-center">
+          <div className="d-flex">
+            <div className="action-label"><i className="fa fa-envelope" aria-hidden="true"></i><span></span>DIRECT</div>
+            {this.props.progress !== "direct" ? <div className="action-label"><i className="fa fa-circle" aria-hidden="true"></i>PAID</div> : null}
+            {this.props.progress === "explorted" ? <div className="action-label"><i className="fa fa-circle" aria-hidden="true"></i>EXPLORTED</div> : null}
+          </div>
+
           <div className="action-btns d-flex justify-content-between">
             <div className="dropdown">
               <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 More
               </button>
               <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a className="dropdown-item" href="#">Action</a>
-                <a className="dropdown-item" href="#">Another action</a>
-                <a className="dropdown-item" href="#">Something else here</a>
+                <a className="dropdown-item" href="#">Export</a>
+                <a className="dropdown-item" href="#">Mark as exported</a>
+                <hr/>
+                <a className="dropdown-item" href="#">Setup vendor</a>
+                <hr/>
+                <a className="dropdown-item" href="#">Flag invoice</a>
+                <a className="dropdown-item" href="#">Archive invoice</a>
+                <a className="dropdown-item" href="#">Delete invoice</a>
               </div>
             </div>
-            <button className="btn btn-primary" type="button">
-              Approve
+            <button className={"btn main-action btn-" + (this.props.progress === "direct" ? "blue":"green")} type="button" onClick={() => this.handleProgress()}>
+              {this.buttonText()}
             </button>
           </div>
         </div>
+
         <div className="head-detail">
           {this.state.fold ? null : <div>VENDOR</div> }
           <h4>Food Harvest Produce Vendor{" "}
@@ -68,9 +98,9 @@ export default class PanelHead extends Component{
         </div>
 
         <div className="nav head-nav">
-          <li className="nav-item active">Line Items</li>
-          <li className="nav-item">Account Splits</li>
-          <li className="nav-item">History</li>
+          <li className={"nav-item" + (this.props.tab === "line-items" ? " active" : "")} onClick={() => this.props.changeTab("line-items")}>Line Items</li>
+          <li className={"nav-item" + (this.props.tab === "account-splits" ? " active" : "")} onClick={() => this.props.changeTab("account-splits")}>Account Splits</li>
+          <li className={"nav-item" + (this.props.tab === "history" ? " active" : "")} onClick={() => this.props.changeTab("history")}>History</li>
         </div>
       </div>
     )

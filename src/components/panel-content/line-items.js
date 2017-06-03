@@ -9,7 +9,6 @@ import mappedItem from '../../data/mappedItem.json'
 export default class LineItems extends Component{
 
   render(){
-    console.log(unmappedItem);
     return(
       <div className="line-items">
         <h6>Unmapped Items</h6>

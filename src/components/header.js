@@ -4,9 +4,9 @@ export default class Header extends Component{
 
   render(){
     return(
-      <header className="navbar-toggleable-md d-flex justify-content-between">
-        <a className="navbar-brand" href="#">Plate IQ <i className="fa fa-home" aria-hidden="true"></i></a>
-        <ul className="navbar-nav">
+      <header className="navbar-toggleable-md row">
+        <a className="navbar-brand col-2" href="#">Plate IQ <i className="fa fa-home" aria-hidden="true"></i></a>
+        <ul className="navbar-nav col-8">
           <li className="nav-item">
             <a className="nav-link" href="#">Hot List</a>
           </li>
@@ -29,7 +29,7 @@ export default class Header extends Component{
             <a className="nav-link" href="#">Accounting</a>
           </li>
         </ul>
-        <ul className="navbar-nav">
+        <ul className="navbar-nav col-2 justify-content-end">
           <li className="nav-item">
             <a className="nav-link" href="#">FAQ</a>
           </li>

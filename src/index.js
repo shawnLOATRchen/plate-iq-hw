@@ -18,9 +18,11 @@ class App extends Component{
     return(
       <main>
         <Header />
-        <section className="row">
-          <PDFReader />
-          <ControlPanel />
+        <section>
+          <div className="row">
+            <PDFReader />
+            <ControlPanel />
+          </div>
         </section>
       </main>
     )
