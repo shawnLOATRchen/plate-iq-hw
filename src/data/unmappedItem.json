@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Avocado-60ct-California",
+    "quantity": 5,
+    "price": 10.00,
+    "unit": "Case",
+    "total": 50.00
+  },
+  {
+    "name": "Tomate-big",
+    "quantity": 14.450,
+    "price": 1.00,
+    "unit": "Lb",
+    "total": 14.45
+  },
+  {
+    "name": "Avocado-60ct-California",
+    "quantity": 21,
+    "price": 2.00,
+    "unit": "Case",
+    "total": 42.00
+  }
+]
