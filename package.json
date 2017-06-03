@@ -4,7 +4,8 @@
   "description": "plate iq home homework by yuxiang(shawn) chen",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --content-base public --inline --hot"
   },
   "repository": {
     "type": "git",

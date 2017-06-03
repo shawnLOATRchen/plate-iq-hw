@@ -1,11 +1,11 @@
 var path = require('path');
 
 module.exports = {
-  entry: path.resolve(__dirname, 'src') + '/js/index.js',
+  entry: path.resolve(__dirname, 'src') + '/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'app.js',
-    publicPath: '/dist/' //only use /dist/ instead of /src/dist/...
+    publicPath: '/dist/' //only use /dist/ instead of ../dist/...
   },
   module: {
     loaders: [
