@@ -1,6 +1,7 @@
 [
   {
     "name": "Avocado-60ct-California",
+    "label": "Vegetables & Produce 4460 - 9800",
     "quantity": "5",
     "price": "10.00",
     "unit": "Case",
@@ -9,6 +10,7 @@
   },
   {
     "name": "Tomate-big",
+    "label": "Vegetables & Produce 4460 - 9800",
     "quantity": "14.450",
     "price": "1.00",
     "unit": "Lb",
@@ -16,7 +18,8 @@
     "bottomDetail": ["account"]
   },
   {
-    "name": "Avocado-60ct-California",
+    "name": "Onion-White-Case",
+    "label": "Vegetables & Produce 4460 - 9800",
     "quantity": "21",
     "price": "2.00",
     "unit": "Case",

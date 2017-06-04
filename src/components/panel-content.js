@@ -14,7 +14,7 @@ export default class PanelHead extends Component{
         return (<AccountSplits />)
       case "line-items":
       default:
-        return (<LineItems />)
+        return (<LineItems progress={this.props.progress}/>)
     }
   }
 
