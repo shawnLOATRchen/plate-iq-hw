@@ -11,10 +11,28 @@
   {
     "date": "TODAY",
     "time": "09:25 AM",
-    "flagged": true,
+    "flagged": false,
+    "approved": true,
+    "resolved": false,
+    "title": "Approved by Jon Doe",
+    "discription": ""
+  },
+  {
+    "date": "TODAY",
+    "time": "09:25 AM",
+    "flagged": false,
     "approved": false,
     "resolved": false,
-    "title": "Flagged by Jon Doe",
+    "title": "Modified by Jon Doe",
+    "discription": "In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique"
+  },
+  {
+    "date": "TODAY",
+    "time": "09:25 AM",
+    "flagged": false,
+    "approved": false,
+    "resolved": false,
+    "title": "Flag resolved by Jon Doe",
     "discription": "Lorem ipsum dolor sit amet"
   },
   {
@@ -22,35 +40,17 @@
     "time": "09:25 AM",
     "flagged": true,
     "approved": false,
-    "resolved": false,
+    "resolved": true,
     "title": "Flagged by Jon Doe",
     "discription": "Lorem ipsum dolor sit amet"
   },
   {
     "date": "TODAY",
     "time": "09:25 AM",
-    "flagged": true,
+    "flagged": false,
     "approved": false,
     "resolved": false,
-    "title": "Flagged by Jon Doe",
-    "discription": "Lorem ipsum dolor sit amet"
-  },
-  {
-    "date": "TODAY",
-    "time": "09:25 AM",
-    "flagged": true,
-    "approved": false,
-    "resolved": false,
-    "title": "Flagged by Jon Doe",
-    "discription": "Lorem ipsum dolor sit amet"
-  },
-  {
-    "date": "TODAY",
-    "time": "09:25 AM",
-    "flagged": true,
-    "approved": false,
-    "resolved": false,
-    "title": "Flagged by Jon Doe",
-    "discription": "Lorem ipsum dolor sit amet"
+    "title": "Modified by Jon Doe",
+    "discription": ""
   }
 ]

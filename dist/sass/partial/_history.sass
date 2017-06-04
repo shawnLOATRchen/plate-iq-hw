@@ -1,22 +1,57 @@
 .history
+  .btn-flag
+    font-size: 12px
+    .fa-flag
+      color: darkgrey
+      margin-right: 4px
   .activity-box
+    background-color: white
     border: 1px solid lightgrey
     padding: 12px
     margin: 10px 0
+    &:last-child
+      overflow: hidden
+    .time, .discription
+      font-size: 12px
+      color: darkgrey
     .activity-status
       width: 20px
       margin-right: 10px
-      .status-top, .status-buttom
+      align-content: stretch
+      .status-top, .status-buttom, .status-extend
         width: 2px
         background-color: lightgrey
       .status-top
-        height: 15px
+        height: 18px
         margin: -12px 0 5px 0
       .status-buttom
-        height: 15px
+        height: 18px
+        height: 100%
         margin: 5px 0 -12px 0
+        flex-self: flex-end
       .status-circle
         width: 15px
         height: 15px
         border-radius: 50%
         background-color: lightgrey
+        transform: translateX(-6.5px)
+      .status-circle.red
+        background-color: #ff425e
+      .status-circle.blue
+        background-color: #2396f3
+    .title.red
+      color: #ff425e
+    .title.blue
+      color: #2396f3
+    .to-resolve
+      background-color: #2396f3
+      font-size: 12px
+      color: white
+    .resolved
+      font-size: 10px
+      background-color: white
+      border-radius: 15px
+      text-transform: uppercase
+      font-weight: 500
+      border: 1px solid lightgrey
+      color: lightgrey
