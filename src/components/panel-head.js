@@ -74,8 +74,8 @@ export default class PanelHead extends Component{
           {this.state.fold ? null : <div className="vender-text">VENDOR</div> }
           <h4>Food Harvest Produce Vendor{" "}
             {this.state.fold ?
-              <img src="/img/arrow-down.png" onClick={() => this.setState({ fold: false})}/> :
-              <img src="/img/arrow-up.png" onClick={() => this.setState({ fold: true})}/>
+              <img src="./dist/img/arrow-down.png" onClick={() => this.setState({ fold: false})}/> :
+              <img src="./dist/img/arrow-up.png" onClick={() => this.setState({ fold: true})}/>
             }
           </h4>
           {this.state.fold ?

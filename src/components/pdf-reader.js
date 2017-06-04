@@ -6,8 +6,8 @@ export default class PDFReader extends Component{
     return(
       <div className="pdf-reader">
         <div className="pdf-container">
-          <object data="invoice.pdf" type="application/pdf">
-            <p>Alternative text - include a link <a href="invoice.pdf">to the PDF!</a></p>
+          <object data="./dist/invoice.pdf" type="application/pdf">
+            <p>Alternative text - include a link <a href="./dist/invoice.pdf">to the PDF!</a></p>
           </object>
         </div>
         <div className="control-panel row">

@@ -9795,14 +9795,14 @@ var PDFReader = function (_Component) {
           { className: "pdf-container" },
           _react2.default.createElement(
             "object",
-            { data: "invoice.pdf", type: "application/pdf" },
+            { data: "./dist/invoice.pdf", type: "application/pdf" },
             _react2.default.createElement(
               "p",
               null,
               "Alternative text - include a link ",
               _react2.default.createElement(
                 "a",
-                { href: "invoice.pdf" },
+                { href: "./dist/invoice.pdf" },
                 "to the PDF!"
               )
             )
@@ -10921,9 +10921,6 @@ var PanelHead = function (_Component) {
           return "Approve";
       }
     }
-    // <i className="fa fa-chevron-circle-down" aria-hidden="true" onClick={() => this.setState({ fold: false})}></i> :
-    // <i className="fa fa-chevron-circle-up" aria-hidden="true" onClick={() => this.setState({ fold: true})}></i>
-
   }, {
     key: "render",
     value: function render() {
@@ -11043,9 +11040,9 @@ var PanelHead = function (_Component) {
             null,
             "Food Harvest Produce Vendor",
             " ",
-            this.state.fold ? _react2.default.createElement("img", { src: "../dist/img/arrow-down.png", onClick: function onClick() {
+            this.state.fold ? _react2.default.createElement("img", { src: "./dist/img/arrow-down.png", onClick: function onClick() {
                 return _this2.setState({ fold: false });
-              } }) : _react2.default.createElement("img", { src: "../dist/img/arrow-up.png", onClick: function onClick() {
+              } }) : _react2.default.createElement("img", { src: "./dist/img/arrow-up.png", onClick: function onClick() {
                 return _this2.setState({ fold: true });
               } })
           ),
