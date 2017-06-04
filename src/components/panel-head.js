@@ -74,8 +74,12 @@ export default class PanelHead extends Component{
                 <div className="col">24482-20095</div>
                 <div className="col">Jun 20, 2016</div>
                 <div className="col">Kate's Taco Shop</div>
-                <div className="col">Lorem ipsum...</div>
+                <div className="col last">Lorem ipsum...</div>
                 <hr className="col"/>
+              </div>
+              <div className="d-flex justify-content-between align-items-center total">
+                <div className="text">TOTAL</div>
+                <div className="price"><span>$</span>1,333.00</div>
               </div>
             </div>
             :

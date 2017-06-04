@@ -11,7 +11,11 @@ export default class AccountSplits extends Component{
   render(){
     return(
       <div className="account-splits">
-        <h6>Account Splits</h6>
+        <div className="d-flex justify-content-between">
+          <h6>Account Splits</h6>
+          <div className="btn btn-secondary"><i className="fa fa-pencil" aria-hidden="true"></i> Edit account splits</div>
+        </div>
+        <div className="account-alert">By directly editing the invoice's account splits you'll lose all item specific changes.</div>
         <div className="row table-head">
           <div className="col-6">ACCOUNT NAME</div>
           <div className="col-4">DEPARTMENT</div>

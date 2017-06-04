@@ -11,7 +11,7 @@ export default class ControlPanel extends Component{
   }
   render(){
     return(
-      <div className="control-panel col-6">
+      <div className="control-panel">
         <div className="panel">
           <PanelStatus
             progress={this.state.progress}
