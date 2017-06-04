@@ -53,6 +53,16 @@
     .vender-mapped
       color: #00c6a2
       margin-bottom: 5px
+    .subtotal
+      color: #c7c7c7
+      span
+        vertical-align: middle
+        line-height: 20px
+      span:first-child
+        font-size: 10px
+      span:last-child
+        font-size: 14px
+        font-weight: 500
     .total
       div
         vertical-align: middle
@@ -74,11 +84,22 @@
         color: #c8c8c8
       hr
         margin-right: 10px
-      .total
+      .total.canhover
         position: absolute
         top: 90%
         left: 80%
         width: 20%
+      .hover-total
+        position: absolute
+        right: -10px
+        bottom: -30px
+        padding: 10px
+        background-color: white
+        width: 25%
+        border: 1px solid darkgrey
+        border-radius: 3px
+        hr
+          margin-right: 0
 
 
     .unfold-detail
@@ -91,17 +112,6 @@
           font-size: 10px
           font-weight: 500
           margin-bottom: 10px
-      .subtotal
-        color: #c7c7c7
-        span
-          vertical-align: middle
-          line-height: 20px
-        span:first-child
-          font-size: 10px
-        span:last-child
-          font-size: 14px
-          font-weight: 500
-
       hr
         margin: 0
         width: 50%

@@ -4,7 +4,7 @@ import React, {Component} from 'react'
 export default class PanelHead extends Component{
   constructor(){
     super();
-    this.state = { fold: true }
+    this.state = { fold: true, showHover: false }
   }
   handleProgress(){
     switch (this.props.progress) {
@@ -67,7 +67,7 @@ export default class PanelHead extends Component{
               {this.buttonText()}
             </button>
           </div>
-        </div>W
+        </div>
 
         <div className="head-detail">
           {this.state.fold ? null : <div className="vender-text">VENDOR</div> }
@@ -86,10 +86,30 @@ export default class PanelHead extends Component{
                 <div className="col last">Lorem ipsum...</div>
                 <hr className="col"/>
               </div>
-              <div className="d-flex justify-content-between align-items-center total">
+              <div className="d-flex justify-content-between align-items-center total canhover" onMouseOver={() => this.setState({showHover:true})}>
                 <div className="text">TOTAL</div>
                 <div className="price"><span>$</span>1,333.00</div>
               </div>
+              { this.state.showHover &&
+                <div className="hover-total" onMouseOut={() => this.setState({showHover:false})}>
+                  <div className="d-flex flex-column subtotal">
+                    <div className="d-flex justify-content-between">
+                      <span className="left">SUBTOTAL</span>
+                      <span className="right">$1300.00</span>
+                    </div>
+                    <div className="d-flex justify-content-between">
+                      <span className="left">TAX</span>
+                      <span className="right">$26.32</span>
+                    </div>
+                  </div>
+                  <hr />
+                  <div className="d-flex justify-content-between align-items-center total">
+                    <div className="text">TOTAL</div>
+                    <div className="price"><span>$</span>1,333.00</div>
+                  </div>
+                </div>
+              }
+
             </div>
             :
             <div className="unfold-detail">
@@ -132,7 +152,7 @@ export default class PanelHead extends Component{
                   <div className="content">Aug 10, 2016</div>
                 </div>
                 <div className="col d-flex justify-content-between align-items-center total">
-                  <div className="title">TOTAL</div>
+                  <div className="text">TOTAL</div>
                   <div className="price"><span>$</span>1,333.00</div>
                 </div>
               </div>
