@@ -4,7 +4,7 @@ clone the repo
 
   `npm install`
   
-  `pm run start`
+  `npm run start`
   
 the website will host on the `localhost:8081`
 
