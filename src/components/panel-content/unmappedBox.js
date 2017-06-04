@@ -47,7 +47,26 @@ export default class UnmappedBox extends Component{
           <div className="bottom-icons col-2 d-flex justify-content-around align-items-center">
             <i className="fa fa-pencil" aria-hidden="true"></i>
             <i className="fa fa-code-fork" aria-hidden="true"></i>
-            <i className="fa fa-ellipsis-v" aria-hidden="true"></i>
+            <div className="dropdown">
+              <div id="unmappedDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i className="fa fa-ellipsis-v" aria-hidden="true"></i>
+              </div>
+              <div className="dropdown-menu" aria-labelledby="unmappedDropDown">
+                <div className="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                  <span>Split</span>
+                  <i className="fa fa-code-fork" aria-hidden="true"></i>
+                </div>
+                <div className="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                  <span>Edit</span>
+                  <i className="fa fa-pencil" aria-hidden="true"></i>
+                </div>
+                <div className="dropdown-item trash d-flex justify-content-between align-items-center" href="#">
+                  <span>Delete</span>
+                  <i className="fa fa-trash" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

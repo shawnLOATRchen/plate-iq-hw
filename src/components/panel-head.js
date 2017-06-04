@@ -40,25 +40,34 @@ export default class PanelHead extends Component{
 
           <div className="action-btns d-flex justify-content-between">
             <div className="dropdown">
-              <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button className="btn btn-secondary dropdown-toggle" type="button" id="headMoreDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 More
               </button>
-              <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a className="dropdown-item" href="#">Export</a>
-                <a className="dropdown-item" href="#">Mark as exported</a>
+              <div className="dropdown-menu" aria-labelledby="headMoreDropDown">
+                <div className="dropdown-item" href="#">Export</div>
+                <div className="dropdown-item" href="#">Mark as exported</div>
                 <hr/>
-                <a className="dropdown-item" href="#">Setup vendor</a>
+                <div className="dropdown-item" href="#">Setup vendor</div>
                 <hr/>
-                <a className="dropdown-item" href="#">Flag invoice</a>
-                <a className="dropdown-item" href="#">Archive invoice</a>
-                <a className="dropdown-item" href="#">Delete invoice</a>
+                <div className="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                  <span>Flag invoice</span>
+                  <i className="fa fa-flag" aria-hidden="true"></i>
+                </div>
+                <div className="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                  <span>Archive invoice</span>
+                  <i className="fa fa-archive" aria-hidden="true"></i>
+                </div>
+                <div className="dropdown-item trash d-flex justify-content-between align-items-center" href="#">
+                  <span>Delete invoice</span>
+                  <i className="fa fa-trash" aria-hidden="true"></i>
+                </div>
               </div>
             </div>
             <button className={"btn main-action btn-" + (this.props.progress === "direct" ? "blue":"green")} type="button" onClick={() => this.handleProgress()}>
               {this.buttonText()}
             </button>
           </div>
-        </div>
+        </div>W
 
         <div className="head-detail">
           {this.state.fold ? null : <div className="vender-text">VENDOR</div> }
