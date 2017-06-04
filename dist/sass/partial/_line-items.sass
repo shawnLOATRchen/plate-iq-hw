@@ -1,6 +1,14 @@
 .line-items
+  .fa-plus
+    color: darkgrey
+    margin-right: 3px
+  .btn
+    font-size: 14px
   .table-head
     padding: 10px
+    margin-top: 10px
+
+  // unmapped box
   .unmapped-box
     background-color: white
     border: 1px solid #d2d2d2
@@ -9,11 +17,59 @@
       margin: 0
     .box-top, .box-bottom
       padding: 10px
+    .box-top
+      .tips
+        font-size: 10px
+        color: darkgrey
+        .fa-exclamation-circle
+          color: #ff425e
+      .unit
+        color: darkgrey
+        font-weight: 500
     .box-bottom
+      .form-control
+        font-size: 12px
+        padding: 5px 10px
+        height: 28px
+      .col-7
+        padding-right: 0
+      select
+        color: darkgrey
+      .input-box
+        position: relative
+        input
+          padding-left: 30px
+        .fa-question-circle
+          color: #2396f3
+          position: absolute
+          top: 50%
+          left: 25px
+          z-index: 10
+          transform: translateY(-50%)
+      .input-group-btn
+        font-size: 12px
+        height: 28px
+        .btn
+          padding: 4px 10px
+          .fa-times
+            color: #ff425e
+          .fa-check
+            color: #03c7a3
       .bottom-icons
+        padding-right: 0
         i
           font-size: 16px
           cursor: pointer
+
+  // mapped box
   .mapped-items-list
     .mapped-box
       padding: 12px 0
+      .label, .taxed
+        font-size: 11px
+        color: darkgrey
+      .strong
+        font-weight: 700
+      .unit
+        color: darkgrey
+        font-weight: 500

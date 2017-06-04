@@ -11,7 +11,7 @@ export default class AccountSplits extends Component{
   render(){
     return(
       <div className="account-splits">
-        <div className="d-flex justify-content-between">
+        <div className="d-flex justify-content-between align-items-center">
           <h6>Account Splits</h6>
           <div className="btn btn-secondary"><i className="fa fa-pencil" aria-hidden="true"></i> Edit account splits</div>
         </div>

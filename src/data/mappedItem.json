@@ -2,55 +2,55 @@
   {
     "name": "Carrot",
     "label": "Vegetables & Produce 4460 - 9800",
-    "quantity": 3,
-    "price": 1.00,
+    "quantity": "3",
+    "price": "1.00",
     "unit": "Basket",
-    "total": 3.00,
+    "total": "3.00",
     "taxed": true
   },
   {
     "name": "Blue Cheese",
     "label": "Dairy(1321-9800)",
-    "quantity": 8.400,
-    "price": 2.00,
+    "quantity":" 8.400",
+    "price": "2.00",
     "unit": "Lb",
-    "total": 16.80,
+    "total": "16.80",
     "taxed": true
   },
   {
     "name": "Milk-Whole-1I",
     "label": "Dairy(1321-9800)",
-    "quantity": 24,
-    "price": 1.00,
+    "quantity": "24",
+    "price": "1.00",
     "unit": "Lt",
-    "total": 24.00,
+    "total": "24.00",
     "taxed": false
   },
   {
     "name": "Cheddar",
     "label": "Dairy(1321-9800)",
-    "quantity": 3.000,
-    "price": 1.00,
+    "quantity": "3.000",
+    "price": "1.00",
     "unit": "Lb",
-    "total": 3.00,
+    "total": "3.00",
     "taxed": false
   },
   {
     "name": "Tomato-sauce-organic",
     "label": "Vegetables & Produce 4460 - 9800",
-    "quantity": 1,
-    "price": 1.00,
+    "quantity": "1",
+    "price": "1.00",
     "unit": "Can",
-    "total": 1.0,
+    "total": "1.0",
     "taxed": true
   },
   {
     "name": "Avocado-60ct-California",
     "label": "Vegetables & Produce 4460 - 9800",
-    "quantity": 3.000,
-    "price": 1.00,
+    "quantity": "3.000",
+    "price": "1.00",
     "unit": "Case",
-    "total": 3.00,
+    "total": "3.00",
     "taxed": true
   }
 ]
