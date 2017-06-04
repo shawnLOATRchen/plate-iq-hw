@@ -7,7 +7,7 @@ export default class PDFReader extends Component{
       <div className="pdf-reader">
         <div className="pdf-container">
           <object data="invoice.pdf" type="application/pdf">
-            <p>Alternative text - include a link <a href="myfile.pdf">to the PDF!</a></p>
+            <p>Alternative text - include a link <a href="invoice.pdf">to the PDF!</a></p>
           </object>
         </div>
         <div className="control-panel row">
@@ -22,9 +22,11 @@ export default class PDFReader extends Component{
             <span> 1/3 </span>
             <i className="fa fa-chevron-right" aria-hidden="true"></i>
           </div>
-          <div className="btns col-5 d-flex justify-content-around align-items-center">
-            <div className="btn btn-secondary"><i className="fa fa-download" aria-hidden="true"></i> Download PDF</div>
-            <div className="dropdown">
+          <div className="btns col-5 d-flex justify-content-between align-items-center">
+            <a href="invoice.pdf">
+              <div className="btn btn-secondary"><i className="fa fa-download" aria-hidden="true"></i> Download PDF</div>
+            </a>
+            <div className="dropup">
               <button className="btn btn-secondary dropdown-toggle" type="button" id="pdfReaderDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Actions
               </button>

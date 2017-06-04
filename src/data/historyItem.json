@@ -9,7 +9,7 @@
     "discription": "Lorem ipsum dolor sit amet"
   },
   {
-    "date": "TODAY",
+    "date": "YESTERDAY",
     "time": "09:25 AM",
     "flagged": false,
     "approved": true,
@@ -18,7 +18,7 @@
     "discription": ""
   },
   {
-    "date": "TODAY",
+    "date": "JUL 20, 2016",
     "time": "09:25 AM",
     "flagged": false,
     "approved": false,
@@ -27,7 +27,7 @@
     "discription": "In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique"
   },
   {
-    "date": "TODAY",
+    "date": "JUL 20, 2016",
     "time": "09:25 AM",
     "flagged": false,
     "approved": false,
@@ -36,7 +36,7 @@
     "discription": "Lorem ipsum dolor sit amet"
   },
   {
-    "date": "TODAY",
+    "date": "JUL 20, 2016",
     "time": "09:25 AM",
     "flagged": true,
     "approved": false,
@@ -45,7 +45,7 @@
     "discription": "Lorem ipsum dolor sit amet"
   },
   {
-    "date": "TODAY",
+    "date": "JUL 20, 2016",
     "time": "09:25 AM",
     "flagged": false,
     "approved": false,

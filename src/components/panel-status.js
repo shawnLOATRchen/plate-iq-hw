@@ -18,7 +18,7 @@ export default class PanelStatus extends Component{
       case "explorted":
         return [
           <i className="fa fa-check" aria-hidden="true" key="right1"></i>,
-          <span key="right2"> 4 item(s) require account mapping </span>
+          <span key="right2">This invoice has been approved</span>
         ]
       case "paid":
         return [
@@ -29,7 +29,7 @@ export default class PanelStatus extends Component{
       default:
         return [
           <i className="fa fa-exclamation-triangle" aria-hidden="true" key="right1"></i>,
-          <span key="right2"> 4 item(s) require account mapping </span>
+          <span key="right2">4 item(s) require account mapping</span>
         ]
     }
   }

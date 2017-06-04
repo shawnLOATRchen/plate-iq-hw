@@ -28,13 +28,15 @@ export default class PanelHead extends Component{
         return "Approve"
     }
   }
+  // <i className="fa fa-chevron-circle-down" aria-hidden="true" onClick={() => this.setState({ fold: false})}></i> :
+  // <i className="fa fa-chevron-circle-up" aria-hidden="true" onClick={() => this.setState({ fold: true})}></i>
   render(){
     return(
       <div className="panel-head">
         <div className="head-action d-flex justify-content-between align-items-center">
           <div className="d-flex">
             <div className="action-label"><i className="fa fa-envelope" aria-hidden="true"></i><span></span>DIRECT</div>
-            {this.props.progress !== "direct" ? <div className="action-label"><i className="fa fa-circle" aria-hidden="true"></i>PAID</div> : null}
+            {this.props.progress === "explorted" ? <div className="action-label"><i className="fa fa-circle" aria-hidden="true"></i>PAID</div> : null}
             {this.props.progress === "explorted" ? <div className="action-label"><i className="fa fa-circle" aria-hidden="true"></i>EXPLORTED</div> : null}
           </div>
 
@@ -73,8 +75,8 @@ export default class PanelHead extends Component{
           {this.state.fold ? null : <div className="vender-text">VENDOR</div> }
           <h4>Food Harvest Produce Vendor{" "}
             {this.state.fold ?
-              <i className="fa fa-chevron-circle-down" aria-hidden="true" onClick={() => this.setState({ fold: false})}></i> :
-              <i className="fa fa-chevron-circle-up" aria-hidden="true" onClick={() => this.setState({ fold: true})}></i>
+              <img src="../dist/img/arrow-down.png" onClick={() => this.setState({ fold: false})}/> :
+              <img src="../dist/img/arrow-up.png" onClick={() => this.setState({ fold: true})}/>
             }
           </h4>
           {this.state.fold ?
