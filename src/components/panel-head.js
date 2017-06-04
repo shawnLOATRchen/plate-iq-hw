@@ -28,8 +28,7 @@ export default class PanelHead extends Component{
         return "Approve"
     }
   }
-  // <i className="fa fa-chevron-circle-down" aria-hidden="true" onClick={() => this.setState({ fold: false})}></i> :
-  // <i className="fa fa-chevron-circle-up" aria-hidden="true" onClick={() => this.setState({ fold: true})}></i>
+
   render(){
     return(
       <div className="panel-head">
@@ -75,8 +74,8 @@ export default class PanelHead extends Component{
           {this.state.fold ? null : <div className="vender-text">VENDOR</div> }
           <h4>Food Harvest Produce Vendor{" "}
             {this.state.fold ?
-              <img src="../dist/img/arrow-down.png" onClick={() => this.setState({ fold: false})}/> :
-              <img src="../dist/img/arrow-up.png" onClick={() => this.setState({ fold: true})}/>
+              <img src="/img/arrow-down.png" onClick={() => this.setState({ fold: false})}/> :
+              <img src="/img/arrow-up.png" onClick={() => this.setState({ fold: true})}/>
             }
           </h4>
           {this.state.fold ?
