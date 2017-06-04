@@ -61,7 +61,7 @@ export default class PanelHead extends Component{
         </div>
 
         <div className="head-detail">
-          {this.state.fold ? null : <div>VENDOR</div> }
+          {this.state.fold ? null : <div className="vender-text">VENDOR</div> }
           <h4>Food Harvest Produce Vendor{" "}
             {this.state.fold ?
               <i className="fa fa-chevron-circle-down" aria-hidden="true" onClick={() => this.setState({ fold: false})}></i> :
@@ -80,19 +80,51 @@ export default class PanelHead extends Component{
             </div>
             :
             <div className="unfold-detail">
-              <div><i className="fa fa-check-circle-o" aria-hidden="true"></i> This vendor is mapped</div>
+              <div className="vender-mapped"><i className="fa fa-check-circle-o" aria-hidden="true"></i> This vendor is mapped</div>
               <div className="row">
-                <div className="col">24482-20095</div>
-                <div className="col">Receipt</div>
-                <div className="col">Kate's Taco Shop</div>
-                <div className="col">subtotal</div>
+                <div className="col d-flex flex-column">
+                  <div className="title">INVOICE NO.</div>
+                  <div className="content">24482-20095</div>
+                </div>
+                <div className="col d-flex flex-column">
+                  <div className="title">INVOICE TYPE</div>
+                  <div className="content">Receipt</div>
+                </div>
+                <div className="col d-flex flex-column">
+                  <div className="title">RESTAURANT</div>
+                  <div className="content">Kate's Taco Shop</div>
+                </div>
+                <div className="col d-flex flex-column subtotal">
+                  <div className="d-flex justify-content-between">
+                    <span className="left">SUBTOTAL</span>
+                    <span className="right">$1300.00</span>
+                  </div>
+                  <div className="d-flex justify-content-between">
+                    <span className="left">TAX</span>
+                    <span className="right">$26.32</span>
+                  </div>
+                </div>
               </div>
               <div className="row">
-                <div className="col">Jun 20, 2016</div>
-                <div className="col">Jun 20, 2016</div>
-                <div className="col">Aug 10, 2016</div>
-                <div className="col">Total</div>
+                <div className="col d-flex flex-column">
+                  <div className="title">POSTING DATE</div>
+                  <div className="content">Jun 20, 2016</div>
+                </div>
+                <div className="col d-flex flex-column">
+                  <div className="title">INVOICE DATE</div>
+                  <div className="content">Jun 20, 2016</div>
+                </div>
+                <div className="col d-flex flex-column">
+                  <div className="title">DUE DATE</div>
+                  <div className="content">Aug 10, 2016</div>
+                </div>
+                <div className="col d-flex justify-content-between align-items-center total">
+                  <div className="title">TOTAL</div>
+                  <div className="price"><span>$</span>1,333.00</div>
+                </div>
               </div>
+              <hr />
+              <div className="enter-memo"><i className="fa fa-comment-o" aria-hidden="true"></i> Click to enter Memo</div>
             </div>
           }
         </div>
