@@ -1,4 +1,3 @@
-# Plate IQ homework
 
 clone the repo
 
